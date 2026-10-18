@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Coffee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">◐</span>
+            Premium
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="search-button" id="searchButton" aria-label="Pesquisar">
+                ⌕
+            </button>
+
+            <button class="login-button" id="loginButton">
+                Sign Up
+            </button>
+
+            <button class="mobile-button" id="mobileButton" aria-label="Menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div class="search-box" id="searchBox">
+
+        <div class="search-content">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search coffee..."
+                autocomplete="off"
+            >
+
+            <button id="closeSearch">×</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    DISCOVER THE NEW COFFEE EXPERIENCE
+                </div>
+
+                <h1 id="heroTitle">
+                    What if your<br>
+                    website made<br>
+                    <span>coffee?</span>
+                </h1>
+
+                <p id="heroDescription">
+                    Taste something different. Discover carefully
+                    selected coffee made for people who appreciate
+                    quality and great moments.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="main-button">
+                        Discover Coffee
+                        <span>→</span>
+                    </a>
+
+                    <button class="outline-button" id="exploreButton">
+                        Explore
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEM PRINCIPAL -->
+
+            <div class="hero-visual">
+
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+
+                <div class="coffee-image-wrapper" id="coffeeImageWrapper">
+
+                    <img
+                        id="coffeeImage"
+                        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=90"
+                        alt="Café Premium"
+                    >
+
+                </div>
+
+
+                <!-- CARD ESQUERDO -->
+
+                <div class="floating-card card-left" id="cardLeft">
+
+                    <div class="mini-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
+                            alt="Coffee"
+                        >
+                    </div>
+
+                    <div class="card-text">
+
+                        <small>Premium Coffee</small>
+
+                        <strong id="leftCardTitle">
+                            Whole Coffee
+                        </strong>
+
+                        <button>
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD DIREITO -->
+
+                <div class="floating-card card-right" id="cardRight">
+
+                    <div class="card-icon">
+                        ☕
+                    </div>
+
+                    <div>
+
+                        <small>Best Selection</small>
+
+                        <strong id="rightCardTitle">
+                            Fresh Coffee
+                        </strong>
+
+                        <p>
+                            Carefully selected
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SETAS -->
+
+            <div class="slider-controls">
+
+                <button id="previousButton" aria-label="Anterior">
+                    ←
+                </button>
+
+                <div class="slider-dots" id="sliderDots"></div>
+
+                <button id="nextButton" aria-label="Próximo">
+                    →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products" id="products">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        PREMIUM SELECTION
+                    </span>
+
+                    <h2>
+                        Choose your<br>
+                        <span>favorite coffee.</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Discover our selection of carefully chosen
+                    coffees and special drinks.
+                </p>
+
+            </div>
+
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=85"
+                            alt="Espresso"
+                        >
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <div>
+                            <h3>Espresso</h3>
+                            <p>Strong & intense</p>
+                        </div>
+
+                        <strong>R$ 8,90</strong>
+
+                    </div>
+
+                    <button
+                        class="add-button"
+                        data-name="Espresso"
+                        data-price="8.90"
+                    >
+                        Add to cart
+                    </button>
+
+                </article>
+
+
+                <article class="product-card">
+
+                    <div class="product-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=700&q=85"
+                            alt="Cappuccino"
+                        >
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <div>
+                            <h3>Cappuccino</h3>
+                            <p>Creamy & balanced</p>
+                        </div>
+
+                        <strong>R$ 12,90</strong>
+
+                    </div>
+
+                    <button
+                        class="add-button"
+                        data-name="Cappuccino"
+                        data-price="12.90"
+                    >
+                        Add to cart
+                    </button>
+
+                </article>
+
+
+                <article class="product-card">
+
+                    <div class="product-photo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85"
+                            alt="Latte"
+                        >
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <div>
+                            <h3>Latte</h3>
+                            <p>Soft & creamy</p>
+                        </div>
+
+                        <strong>R$ 13,90</strong>
+
+                    </div>
+
+                    <button
+                        class="add-button"
+                        data-name="Latte"
+                        data-price="13.90"
+                    >
+                        Add to cart
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EVENTS ================= -->
+
+        <section class="events" id="events">
+
+            <div class="events-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85"
+                    alt="Coffee shop"
+                >
+
+            </div>
+
+            <div class="events-content">
+
+                <span class="section-label">
+                    OUR EXPERIENCE
+                </span>
+
+                <h2>
+                    Coffee tastes<br>
+                    better when<br>
+                    shared.
+                </h2>
+
+                <p>
+                    A comfortable place to enjoy great coffee,
+                    meet people and create unforgettable moments.
+                </p>
+
+                <button class="main-button">
+                    Discover More
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <span class="section-label">
+                ABOUT PREMIUM
+            </span>
+
+            <h2>
+                More than coffee.<br>
+                <span>It's an experience.</span>
+            </h2>
+
+            <p>
+                We believe that every cup of coffee can become
+                a special moment. That's why we carefully select
+                every product we offer.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= CART ================= -->
+
+    <button class="cart-button" id="cartButton">
+
+        🛒
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </button>
+
+
+    <!-- ================= CART MODAL ================= -->
+
+    <div class="modal" id="cartModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeCart">
+                ×
+            </button>
+
+            <h2>Your Cart</h2>
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+        Added to cart ✓
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="logo">
+            <span class="logo-icon">◐</span>
+            Premium
+        </div>
+
+        <p>
+            © 2026 Premium Coffee
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
