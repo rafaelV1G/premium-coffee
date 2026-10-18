@@ -691,7 +691,7 @@ checkoutButton.addEventListener(
         */
 
         const phone =
-            "5534999999999";
+            "553491483936";
 
 
         const whatsapp =
